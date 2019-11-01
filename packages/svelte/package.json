@@ -1,0 +1,21 @@
+{
+  "name": "svelte",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "rollup -c",
+    "develop": "rollup -c -w",
+    "storybook": "start-storybook",
+    "test": "jest",
+    "test:e2e": "echo 'Write test!'"
+  },
+  "devDependencies": {
+    "@storybook/svelte": "5.2.5",
+    "@testing-library/svelte": "1.9.0",
+    "rollup-plugin-svelte": "5.1.0",
+    "sirv-cli": "0.4.5",
+    "svelte-loader": "2.13.6"
+  },
+  "peerDependencies": {
+    "svelte": ">= 3"
+  }
+}

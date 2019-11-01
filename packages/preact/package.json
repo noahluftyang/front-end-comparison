@@ -1,0 +1,24 @@
+{
+  "name": "preact",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "preact build",
+    "develop": "preact watch",
+    "lint": "eslint",
+    "storybook": "start-storybook",
+    "test": "jest",
+    "test:e2e": "echo 'Write test!'"
+  },
+  "dependencies": {
+    "preact-render-to-string": "5.1.0",
+    "preact-router": "3.0.0"
+  },
+  "devDependencies": {
+    "@storybook/preact": "5.2.5",
+    "@testing-library/preact": "1.0.2",
+    "preact-cli": "3.0.0-rc.6"
+  },
+  "peerDependencies": {
+    "preact": ">= 10"
+  }
+}

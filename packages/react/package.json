@@ -1,0 +1,20 @@
+{
+  "name": "react",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "react-scripts build",
+    "develop": "react-scripts start",
+    "lint": "eslint",
+    "storybook": "start-storybook",
+    "test": "react-scripts test",
+    "test:e2e": "echo 'Write test!'"
+  },
+  "devDependencies": {
+    "react-scripts": "3.2.0"
+  },
+  "peerDependencies": {
+    "antd": ">= 3",
+    "react": ">= 16.8",
+    "react-dom": ">= 16.8"
+  }
+}

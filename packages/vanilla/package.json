@@ -1,0 +1,17 @@
+{
+  "name": "vanilla",
+  "version": "0.0.0",
+  "scripts": {
+    "lint": "eslint",
+    "storybook": "start-storybook",
+    "test": "jest",
+    "test:e2e": "echo 'Write test!'"
+  },
+  "devDependencies": {
+    "@storybook/html": "5.2.5",
+    "@testing-library/dom": "6.10.0"
+  },
+  "peerDependencies": {
+    "rxjs": ">= 6"
+  }
+}

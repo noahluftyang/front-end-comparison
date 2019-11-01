@@ -1,0 +1,12 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": false,
+    "charset": "utf8",
+    "checkJs": false,
+    "jsx": "react",
+    "target": "es5"
+  },
+  "exclude": ["node_modules"]
+}
