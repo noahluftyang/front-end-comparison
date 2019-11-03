@@ -1,5 +1,6 @@
 {
   "title": "front-end-comparison",
   "description": "",
-  "tags": []
+  "tags": [],
+  "template": "node"
 }
