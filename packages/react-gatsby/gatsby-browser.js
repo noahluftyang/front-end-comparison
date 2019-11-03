@@ -1,7 +1,15 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+import 'antd/dist/antd.min.css';
 
-// You can delete this file if you're not using it
+import { ThemeProvider } from 'emotion-theming';
+import React from 'react';
+
+import { GlobalStyles } from './src/components/mod';
+
+const theme = {};
+
+export const wrapRootElement = ({ element }) => (
+  <ThemeProvider theme={theme}>
+    <GlobalStyles />
+    {element}
+  </ThemeProvider>
+);

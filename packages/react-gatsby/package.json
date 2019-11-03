@@ -12,9 +12,11 @@
   "dependencies": {
     "gatsby": "2.17.7",
     "gatsby-image": "2.2.30",
-    "react-helmet": "5.2.1"
+    "react-helmet": "5.2.1",
+    "react-infinite-scroller": "1.2.4"
   },
   "devDependencies": {
+    "gatsby-plugin-emotion": "4.1.13",
     "gatsby-plugin-manifest": "2.2.26",
     "gatsby-plugin-offline": "3.0.17",
     "gatsby-plugin-react-helmet": "3.1.13",
@@ -24,8 +26,13 @@
     "gatsby-transformer-sharp": "2.3.2"
   },
   "peerDependencies": {
+    "@emotion/core": ">= 10",
+    "@emotion/styled": ">= 10",
     "antd": ">= 3",
+    "emotion-theming": ">= 10",
+    "query-string": ">= 6",
     "react": ">= 16.8",
-    "react-dom": ">= 16.8"
+    "react-dom": ">= 16.8",
+    "rxjs": ">= 6"
   }
 }

@@ -3,22 +3,31 @@
   "version": "0.0.0",
   "scripts": {
     "build": "preact build",
-    "develop": "preact watch",
+    "develop": "preact watch -p 3000",
     "lint": "eslint",
     "storybook": "start-storybook",
     "test": "jest",
     "test:e2e": "echo 'Write test!'"
   },
   "dependencies": {
+    "htm": "2.2.1",
+    "preact-compat": "3.19.0",
     "preact-render-to-string": "5.1.0",
     "preact-router": "3.0.0"
   },
   "devDependencies": {
     "@storybook/preact": "5.2.5",
     "@testing-library/preact": "1.0.2",
+    "dotenv-webpack": "1.7.0",
     "preact-cli": "3.0.0-rc.6"
   },
   "peerDependencies": {
-    "preact": ">= 10"
+    "@emotion/core": ">= 10",
+    "@emotion/styled": ">= 10",
+    "antd": ">= 3",
+    "emotion-theming": ">= 10",
+    "preact": ">= 10",
+    "query-string": ">= 6",
+    "rxjs": ">= 6"
   }
 }

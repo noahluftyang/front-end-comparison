@@ -1,5 +1,5 @@
 {
   "extends": "../../.babelrc",
   "presets": ["gatsby"],
-  "plugins": [["import", { "libraryName": "antd", "style": "css" }]]
+  "plugins": ["emotion", ["import", { "libraryName": "antd", "style": "css" }]]
 }

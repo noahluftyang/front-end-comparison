@@ -1,3 +1,6 @@
+/* eslint-disable-next-line import/no-extraneous-dependencies */
+require('dotenv').config({ path: '../../.env' });
+
 const { resolve } = require('path');
 
 module.exports = {
@@ -14,6 +17,7 @@ module.exports = {
         path: resolve(process.cwd(), 'src', 'images'),
       },
     },
+    'gatsby-plugin-emotion',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
     'gatsby-plugin-typescript',

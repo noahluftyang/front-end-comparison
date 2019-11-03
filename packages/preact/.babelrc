@@ -1,5 +1,7 @@
 {
   "extends": "../../.babelrc",
+  "presets": ["@babel/typescript"],
+  "plugins": ["emotion", ["import", { "libraryName": "antd", "style": "css" }]],
   "env": {
     "test": {
       "presets": [["preact-cli/babel", { "modules": "commonjs" }]]
