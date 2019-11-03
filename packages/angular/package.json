@@ -33,6 +33,7 @@
     "protractor": "5.4.2"
   },
   "peerDependencies": {
+    "query-string": ">= 6",
     "rxjs": ">= 6"
   }
 }

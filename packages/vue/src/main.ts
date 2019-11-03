@@ -1,8 +1,9 @@
-import './plugins/ant-design-vue.js';
+import './plugins/ant-design-vue';
+import './global.css';
 
 import Vue from 'vue';
 
-import App from './App.vue';
+import App from './app.vue';
 import { router } from './router';
 
 Vue.config.productionTip = false;

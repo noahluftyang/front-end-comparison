@@ -9,12 +9,13 @@ import { en_US, NgZorroAntdModule, NZ_I18N } from 'ng-zorro-antd';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LayoutComponent } from './components/mod';
 import { MoviesComponent } from './movies/movies.component';
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent, MoviesComponent],
+  declarations: [AppComponent, MoviesComponent, LayoutComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

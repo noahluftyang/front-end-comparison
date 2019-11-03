@@ -1,3 +1,8 @@
-<p>movies works!</p>
-
-<div *ngFor="const movie of movies | async"></div>
+<main class="movies__wrapper">
+  <nz-card *ngFor="let movie of movies | async" [nzCover]="coverImage">
+    <nz-card-meta nzDescription="{{ movie.overview }}" nzTitle="{{ movie.title }}"></nz-card-meta>
+    <ng-template #coverImage>
+      <img alt="{{ movie.title }}" src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}" />
+    </ng-template>
+  </nz-card>
+</main>
