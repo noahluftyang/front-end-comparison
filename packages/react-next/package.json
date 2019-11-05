@@ -1,0 +1,25 @@
+{
+  "name": "react-next",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "next build",
+    "develop": "next dev",
+    "lint": "eslint",
+    "storybook": "start-storybook",
+    "test": "jest",
+    "test:e2e": "echo 'Write test!'"
+  },
+  "dependencies": {
+    "next": "9.1.2"
+  },
+  "peerDependencies": {
+    "@emotion/core": ">= 10",
+    "@emotion/styled": ">= 10",
+    "antd": ">= 3",
+    "emotion-theming": ">= 10",
+    "query-string": ">= 6",
+    "react": ">= 16.8",
+    "react-dom": ">= 16.8",
+    "rxjs": ">= 6"
+  }
+}
