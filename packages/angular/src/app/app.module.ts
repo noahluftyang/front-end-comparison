@@ -11,11 +11,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './components/mod';
 import { MoviesComponent } from './movies/movies.component';
+import { SearchComponent } from './search/search.component';
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent, MoviesComponent, LayoutComponent],
+  declarations: [AppComponent, MoviesComponent, LayoutComponent, SearchComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
