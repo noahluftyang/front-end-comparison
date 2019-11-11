@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <a-input @change="handleInputChange" />
     <main class="movies__wrapper">
       <a-card v-bind:key="'card-'+movie.id" v-for="movie in movies">
         <img
@@ -15,11 +16,14 @@
   </Layout>
 </template>
 
-<script>
-import Layout from '../components/layout.vue';
-import { TMDbService } from '../services/tmdb';
+<script lang="ts">
+import { Subject } from 'rxjs';
 
-const tmdbService = new TMDbService();
+import Layout from '../components/layout.vue';
+import { MoviesService } from '../services/movies';
+
+const moviesService = new MoviesService();
+const input$ = new Subject<string>();
 
 export default {
   components: {
@@ -30,10 +34,21 @@ export default {
       movies: [],
     };
   },
-  mounted() {
-    tmdbService.getMovies().subscribe(result => {
-      this.movies = result;
+  created() {
+    // read movies
+    moviesService.readMovies().subscribe(movies => {
+      this.movies = movies;
     });
+
+    // search movies by input keyword
+    moviesService.searchMovies(input$).subscribe(movies => {
+      this.movies = movies;
+    });
+  },
+  methods: {
+    handleInputChange(e) {
+      input$.next(e.currentTarget.value);
+    },
   },
 };
 </script>

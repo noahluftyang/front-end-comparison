@@ -1,8 +1,8 @@
-<main>
+<app-layout>
   <input nz-input (input)="input$.next($event.currentTarget.value)" [nzAutocomplete]="search" />
   <nz-autocomplete #search>
     <nz-auto-option *ngFor="let option of options">
       {{ option.login }}
     </nz-auto-option>
   </nz-autocomplete>
-</main>
+</app-layout>

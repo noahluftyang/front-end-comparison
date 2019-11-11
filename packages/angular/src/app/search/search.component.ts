@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Subject } from 'rxjs';
 
 import { SearchService } from '../services/search.service';
-import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-search',
@@ -14,8 +14,8 @@ export class SearchComponent {
   options = [];
 
   constructor(private searchService: SearchService) {
-    this.searchService.searchProjects(this.input$).subscribe(projects => {
-      this.options = projects;
+    this.searchService.searchUsers(this.input$).subscribe(users => {
+      this.options = users;
     });
   }
 }

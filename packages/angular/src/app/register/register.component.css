@@ -1,0 +1,13 @@
+.register__wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.form__wrapper {
+  background-color: #fff;
+  display: grid;
+  padding: 32px;
+  row-gap: 16px;
+}

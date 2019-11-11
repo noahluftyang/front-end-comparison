@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { stringify } from 'query-string';
+import { of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
 import { environment } from '../../environments/environment';
@@ -9,20 +9,18 @@ import { environment } from '../../environments/environment';
   providedIn: 'root',
 })
 export class MoviesService {
+  private baseUrl = 'https://api.themoviedb.org';
+
   constructor(private http: HttpClient) {}
 
-  getMovies() {
+  readMovies() {
     return this.http
-      .get(
-        `https://api.themoviedb.org/3/discover/movie?${stringify({
-          api_key: environment.ANGULAR_TMDB_API_KEY,
-        })}`
-      )
+      .get(`${this.baseUrl}/3/discover/movie`, {
+        params: { api_key: environment.ANGULAR_TMDB_API_KEY },
+      })
       .pipe(
         map(response => response.results),
-        catchError(error => {
-          console.error(error);
-        })
+        catchError(error => of(error))
       );
   }
 }

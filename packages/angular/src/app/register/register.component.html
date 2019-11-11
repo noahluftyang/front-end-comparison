@@ -1,0 +1,17 @@
+<main class="register__wrapper">
+  <form
+    class="form__wrapper"
+    [formGroup]="registerForm"
+    (ngSubmit)="form$.next(registerForm.value)"
+  >
+    <label>
+      Email:
+      <input formControlName="email" id="email" nz-input type="email" />
+    </label>
+    <label>
+      Password:
+      <input formControlName="password" id="password" nz-input type="password" />
+    </label>
+    <button nz-button type="submit" [nzType]="'primary'">Register</button>
+  </form>
+</main>

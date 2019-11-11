@@ -1,0 +1,13 @@
+<main class="login__wrapper">
+  <form class="form__wrapper" [formGroup]="loginForm" (ngSubmit)="form$.next(loginForm.value)">
+    <label>
+      Email:
+      <input formControlName="email" id="email" nz-input type="email" />
+    </label>
+    <label>
+      Password:
+      <input formControlName="password" id="password" nz-input type="password" />
+    </label>
+    <button nz-button type="submit" [nzType]="'primary'">Login</button>
+  </form>
+</main>

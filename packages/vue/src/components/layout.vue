@@ -7,7 +7,9 @@
 </template>
 
 <script lang="ts">
-export default {};
+export default {
+  name: 'app-layout',
+};
 </script>
 
 <style scoped>
