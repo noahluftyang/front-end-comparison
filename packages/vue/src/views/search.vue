@@ -1,11 +1,11 @@
 <template>
-  <Layout>
+  <layout>
     <a-auto-complete @search="handleInputChange">
       <template slot="dataSource">
         <a-select-option v-for="option in options" :key="option.node_id">{{option.login}}</a-select-option>
       </template>
     </a-auto-complete>
-  </Layout>
+  </layout>
 </template>
 
 <script lang="ts">

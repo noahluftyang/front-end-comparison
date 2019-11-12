@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <layout>
     <main class="login__wrapper">
       <form class="form__wrapper" @submit="handleSubmit">
         <label>
@@ -13,7 +13,7 @@
         <a-button htmlType="submit" type="primary">Login</a-button>
       </form>
     </main>
-  </Layout>
+  </layout>
 </template>
 
 <script lang="ts">

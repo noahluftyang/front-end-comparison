@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <layout>
     <a-input @change="handleInputChange" />
     <main class="movies__wrapper">
       <a-card v-bind:key="'card-'+movie.id" v-for="movie in movies">
@@ -13,7 +13,7 @@
         </a-card-meta>
       </a-card>
     </main>
-  </Layout>
+  </layout>
 </template>
 
 <script lang="ts">
