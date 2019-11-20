@@ -5,34 +5,33 @@
     "build": "gatsby build",
     "develop": "gatsby develop -p 3000",
     "lint": "eslint",
+    "serve": "gatsby serve",
     "storybook": "start-storybook",
     "test": "jest",
     "test:e2e": "echo 'Write test!'"
   },
   "dependencies": {
-    "gatsby": "2.17.7",
-    "gatsby-image": "2.2.30",
+    "@emotion/core": "10.0.22",
+    "@emotion/styled": "10.0.23",
+    "antd": "3.25.2",
+    "emotion-theming": "10.0.19",
+    "gatsby": "2.18.0",
+    "query-string": "6.9.0",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
     "react-helmet": "5.2.1",
-    "react-infinite-scroller": "1.2.4"
+    "react-infinite-scroller": "1.2.4",
+    "rxjs": "6.5.3"
   },
   "devDependencies": {
-    "gatsby-plugin-emotion": "4.1.13",
-    "gatsby-plugin-manifest": "2.2.26",
-    "gatsby-plugin-offline": "3.0.17",
-    "gatsby-plugin-react-helmet": "3.1.13",
-    "gatsby-plugin-sharp": "2.2.36",
-    "gatsby-plugin-typescript": "2.1.15",
-    "gatsby-source-filesystem": "2.1.35",
-    "gatsby-transformer-sharp": "2.3.2"
-  },
-  "peerDependencies": {
-    "@emotion/core": ">= 10",
-    "@emotion/styled": ">= 10",
-    "antd": ">= 3",
-    "emotion-theming": ">= 10",
-    "query-string": ">= 6",
-    "react": ">= 16.8",
-    "react-dom": ">= 16.8",
-    "rxjs": ">= 6"
+    "@babel/plugin-proposal-optional-chaining": "7.6.0",
+    "babel-plugin-emotion": "10.0.23",
+    "babel-plugin-import": "1.12.2",
+    "babel-plugin-macros": "2.7.0",
+    "gatsby-plugin-emotion": "4.1.15",
+    "gatsby-plugin-manifest": "2.2.29",
+    "gatsby-plugin-offline": "3.0.22",
+    "gatsby-plugin-react-helmet": "3.1.15",
+    "gatsby-plugin-typescript": "2.1.18"
   }
 }

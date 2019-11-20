@@ -1,5 +1,9 @@
 {
-  "extends": "../../.babelrc",
   "presets": ["gatsby"],
-  "plugins": ["emotion", ["import", { "libraryName": "antd", "style": "css" }]]
+  "plugins": [
+    "@babel/proposal-optional-chaining",
+    "emotion",
+    "macros",
+    ["import", { "libraryName": "antd", "style": "css" }]
+  ]
 }

@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: react-gatsby
+spec:
+  ports:
+    - port: 3000
+      targetPort: gatsby
+  selector:
+    app: react-gatsby
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: react-gatsby
+  name: react-gatsby
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: react-gatsby
+  template:
+    metadata:
+      labels:
+        app: react-gatsby
+    spec:
+      containers:
+        - image: react-gatsby
+          name: react-gatsby
+          ports:
+            - containerPort: 80
+              name: gatsby

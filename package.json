@@ -1,7 +1,7 @@
 {
-  "name": "front-end-comparison",
+  "name": "spa-comparison",
   "version": "0.0.0",
-  "description": "Start with this project :runner:",
+  "description": "",
   "keywords": [
     "javascript",
     "boilerplate",
@@ -11,7 +11,7 @@
   "homepage": "n/a",
   "bugs": {
     "email": "euihyun.yang.9x@gmail.com",
-    "url": "https://github.com/noahluftyang/front-end-comparison/issues"
+    "url": "https://github.com/noahluftyang/spa-comparison/issues"
   },
   "license": "MIT",
   "author": {
@@ -19,7 +19,7 @@
     "name": "Euihyun_Yang",
     "url": "https://blog-noahyang.netlify.com"
   },
-  "repository": "git@github.com:noahluftyang/front-end-comparison.git",
+  "repository": "git@github.com:noahluftyang/spa-comparison.git",
   "scripts": {
     "postinstall": "lerna bootstrap"
   },
