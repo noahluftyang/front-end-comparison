@@ -7,6 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'movies' },
   { component: LoginComponent, path: 'login' },
   { component: MoviesComponent, path: 'movies' },
   { component: RegisterComponent, path: 'register' },

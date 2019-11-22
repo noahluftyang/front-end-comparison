@@ -1,11 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
+  labels:
+    app: react-gatsby
   name: react-gatsby
 spec:
   ports:
     - port: 3000
-      targetPort: gatsby
+      targetPort: react-gatsby
   selector:
     app: react-gatsby
   type: LoadBalancer
@@ -31,4 +33,4 @@ spec:
           name: react-gatsby
           ports:
             - containerPort: 80
-              name: gatsby
+              name: react-gatsby
