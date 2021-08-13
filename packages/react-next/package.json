@@ -10,7 +10,7 @@
     "test:e2e": "echo 'Write test!'"
   },
   "dependencies": {
-    "next": "9.1.2"
+    "next": "11.1.0"
   },
   "peerDependencies": {
     "@emotion/core": ">= 10",
